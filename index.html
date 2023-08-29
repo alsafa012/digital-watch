@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+               }
+               body {
+                     width: 1200px;
+                     margin: auto; 
+                     background-color: #E0C3FC ;
+                    /* background-image: linear-gradient(90deg, #8EC5FC 30%, #E0C3FC 90%); */
+               }
+               section {
+                    width: 500px;
+                    margin: auto;
+               }
+               .watch {
+                    
+                    width: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    padding: 20px;
+                    margin: auto;
+                    font-size: 3rem;
+                    font-weight: bold;
+               }
+
+               button {
+                    padding: 5px 10px;
+                    background-image: linear-gradient(
+                         to right,
+                         #68d391,
+                         #4299e1
+                    );
+                    color: whitesmoke;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-radius: 5px;
+               }
+               .btn-div {
+            
+                    background: transparent;
+                    width: 300px;
+                    margin: auto;
+               }
+               .btn {
+                    border: 1px solid rebeccapurple;
+                    text-align: center;
+                    margin-top: 10px;
+               }
+          </style>
+     </head>
+     <body>
+          <section class="section">
+               <div style="margin-top: 150px;">
+                    <div class="watch">
+                         <p id="hour">00</p>
+                         <p>:<span id="min">00</span></p>
+                         <p>:<span id="sec">00</span></p>
+                    </div>
+                    <div class="btn-div">
+                         <div class="btn">
+                              <button onclick="start()">Start</button>
+                              <button id="stop" onclick="stop()">Stop</button>
+                         </div>
+                    </div>
+               </div>
+               <!-- background-image: linear-gradient(to right, #48BB78, #0EA5E9);
+                background-color: #8EC5FC;
+               background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); -->
+          </section>
+          <script src="my.js"></script>
+     </body>
+</html>
+
+
+
+
+
+
