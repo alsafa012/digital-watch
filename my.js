@@ -1,15 +1,12 @@
+
+let num = 0 ;
 function start() {
-     let num = 0 ;
-     // let second = 0;
-     // let minutes = '00';
-     // let hours = '00';
-     let second = text("sec").innerText='00';
-     let minutes = text("min").innerText='00';
-     let hours = text("hour").innerText='00';
+     let second = text("sec");
+     let minutes = text("min");
+     let hours = text("hour");
      const interval = setInterval(() => {
           const n = ++num;
-          //  num = second + n;
-          if (num === 10) {
+          if (n === 3) {
                num = '00';
           }
           if (num === '00') {
@@ -24,13 +21,14 @@ function start() {
           display("sec", num);
           display("hour", hours);
 
-          // stop
-          const stop = document.getElementById("stop");
-          stop.addEventListener("click", function () {
-               clearInterval(interval);
-          });
-          // +++++++++++++++++++++++++++++++++
      }, 1000);
+     // stop
+     const stop = document.getElementById("stop");
+     stop.addEventListener("click", function () {
+          clearInterval(interval);
+          // interval = null;
+     });
+     // +++++++++++++++++++++++++++++++++
 }
 function text(id) {
      const hours = document.getElementById(id);
