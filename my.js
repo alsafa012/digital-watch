@@ -6,13 +6,13 @@ function start() {
      let hours = text("hour");
      const interval = setInterval(() => {
           const n = ++num;
-          if (n === 3) {
+          if (n === 10) {
                num = '00';
           }
           if (num === '00') {
               minutes++;
           }
-          if(minutes === 2){
+          if(minutes === 6){
                minutes='00';
                hours++;
           }
